@@ -27,6 +27,9 @@ tree-sitter-language.workspace = true
 
 topiary-tree-sitter-facade.workspace = true
 topiary-web-tree-sitter-sys.workspace = true
+tree-sitter-catala-en = { workspace = true, optional = true }
+tree-sitter-catala-fr = { workspace = true, optional = true }
+tree-sitter-catala-pl = { workspace = true, optional = true }
 
 [target.'cfg(not(target_family = "wasm"))'.dependencies]
 clap = { workspace = true, features = ["derive"] }
@@ -50,6 +53,9 @@ ocamllex = []
 rust = []
 toml = []
 tree_sitter_query = []
+catala_en = ["dep:tree-sitter-catala-en"]
+catala_fr = ["dep:tree-sitter-catala-fr"]
+catala_pl = ["dep:tree-sitter-catala-pl"]
 
 # This a convenience for the sake of downstream applications which don't
 # wish to cherry-pick grammars (e.g., the playground)
@@ -59,6 +65,9 @@ all = [
   "json",
   "nickel",
   "ocaml",
+  "catala_en",
+  "catala_fr",
+  "catala_pl",
   "ocaml_interface",
   "ocamllex",
   "rust",

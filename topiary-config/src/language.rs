@@ -126,6 +126,24 @@ impl Language {
     ) -> Result<topiary_tree_sitter_facade::Language, TopiaryConfigFetchingError> {
         let library_path = self.library_path()?;
 
+        let language_name = self.name.as_str();
+
+        let key = "TOPIARY_CACHE";
+        let library_path = match env::var(key) {
+            Ok(v) =>
+            { let mut p = PathBuf::from(v) ;
+              p.push(String::from("libtree-sitter-") + language_name +".so");
+              if p.is_file() {
+                  p
+              } else {
+                  p.pop();
+                  p.push(String::from("libtree-sitter-") + language_name +".dll");
+                  p
+              }
+            },
+            Err(_) => library_path
+        };
+
         // Ensure the comile exists
         if !library_path.is_file() {
             match &self.config.grammar.source {

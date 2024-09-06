@@ -1,0 +1,4 @@
+[submodule "tree-sitter-catala"]
+	path = tree-sitter-catala
+	url = https://github.com/CatalaLang/tree-sitter-catala
+        branch = vbot@changes-for-topiary
