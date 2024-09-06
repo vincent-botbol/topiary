@@ -51,6 +51,9 @@ tree-sitter-nickel = { workspace = true, optional = true }
 tree-sitter-query = { workspace = true, optional = true }
 tree-sitter-ocaml = { workspace = true, optional = true }
 tree-sitter-ocamllex = { workspace = true, optional = true }
+tree-sitter-catala-en = { workspace = true, optional = true }
+tree-sitter-catala-fr = { workspace = true, optional = true }
+tree-sitter-catala-pl = { workspace = true, optional = true }
 
 [dev-dependencies]
 assert_cmd = { workspace = true }
@@ -62,6 +65,9 @@ default = [
   "json",
   "nickel",
   "ocaml",
+  "catala_en",
+  "catala_fr",
+  "catala_pl",
   "ocaml_interface",
   "ocamllex",
   "toml",
@@ -84,6 +90,9 @@ css = ["dep:tree-sitter-css", "topiary-config/css", "topiary-queries/css"]
 json = ["dep:tree-sitter-json", "topiary-config/json", "topiary-queries/json"]
 nickel = ["dep:tree-sitter-nickel", "topiary-config/nickel", "topiary-queries/nickel"]
 ocaml = ["dep:tree-sitter-ocaml", "topiary-config/ocaml", "topiary-queries/ocaml"]
+catala_en = ["dep:tree-sitter-catala-en", "topiary-config/catala_en", "topiary-queries/catala_en"]
+catala_fr = ["dep:tree-sitter-catala-fr", "topiary-config/catala_fr", "topiary-queries/catala_fr"]
+catala_pl = ["dep:tree-sitter-catala-pl", "topiary-config/catala_pl", "topiary-queries/catala_pl"]
 ocaml_interface = ["dep:tree-sitter-ocaml", "topiary-config/ocaml_interface", "topiary-queries/ocaml_interface"]
 ocamllex = ["dep:tree-sitter-ocamllex", "topiary-config/ocamllex", "topiary-queries/ocamllex"]
 rust = ["dep:tree-sitter-rust", "topiary-config/rust", "topiary-queries/rust"]

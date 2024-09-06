@@ -27,6 +27,9 @@ tree-sitter-rust = { workspace = true, optional = true }
 tree-sitter-toml = { workspace = true, optional = true }
 tree-sitter-bash = { workspace = true, optional = true }
 tree-sitter-css = { workspace = true, optional = true }
+tree-sitter-catala-en = { workspace = true, optional = true }
+tree-sitter-catala-fr = { workspace = true, optional = true }
+tree-sitter-catala-pl = { workspace = true, optional = true }
 tree-sitter-nickel = { workspace = true, optional = true }
 tree-sitter-query = { workspace = true, optional = true }
 tree-sitter-ocaml = { workspace = true, optional = true }
@@ -41,6 +44,9 @@ css = ["dep:tree-sitter-css"]
 json = ["dep:tree-sitter-json"]
 nickel = ["dep:tree-sitter-nickel"]
 ocaml = ["dep:tree-sitter-ocaml"]
+catala_en = ["dep:tree-sitter-catala-en"]
+catala_fr = ["dep:tree-sitter-catala-fr"]
+catala_pl = ["dep:tree-sitter-catala-pl"]
 ocaml_interface = ["dep:tree-sitter-ocaml"]
 ocamllex = ["dep:tree-sitter-ocamllex"]
 rust = ["dep:tree-sitter-rust"]
@@ -55,6 +61,9 @@ all = [
   "json",
   "nickel",
   "ocaml",
+  "catala_en",
+  "catala_fr",
+  "catala_pl",
   "ocaml_interface",
   "ocamllex",
   "rust",

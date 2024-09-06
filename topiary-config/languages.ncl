@@ -1,5 +1,9 @@
 {
   languages = {
+    catala_en.extensions = ["catala_en"],
+    catala_fr.extensions = ["catala_fr"],
+    catala_pl.extensions = ["catala_pl"],
+
     bash.extensions = ["sh", "bash"],
 
     css.extensions = ["css"],

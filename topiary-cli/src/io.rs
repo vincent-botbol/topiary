@@ -338,6 +338,15 @@ where
         #[cfg(feature = "ocaml")]
         "ocaml" => Ok(topiary_queries::ocaml().into()),
 
+        #[cfg(feature = "catala_en")]
+        "catala_en" => Ok(topiary_queries::catala_en().into()),
+
+        #[cfg(feature = "catala_fr")]
+        "catala_fr" => Ok(topiary_queries::catala_fr().into()),
+
+        #[cfg(feature = "catala_pl")]
+        "catala_pl" => Ok(topiary_queries::catala_pl().into()),
+
         #[cfg(feature = "ocaml_interface")]
         "ocaml_interface" => Ok(topiary_queries::ocaml_interface().into()),
 

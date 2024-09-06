@@ -54,6 +54,15 @@ impl Language {
             #[cfg(feature = "ocaml")]
             "ocaml" => "ocaml",
 
+            #[cfg(feature = "catala_en")]
+            "catala_en" => "catala",
+
+            #[cfg(feature = "catala_fr")]
+            "catala_fr" => "catala",
+
+            #[cfg(feature = "catala_pl")]
+            "catala_pl" => "catala",
+
             #[cfg(feature = "ocaml_interface")]
             "ocaml_interface" => "ocaml",
 
@@ -122,6 +131,15 @@ impl Language {
             #[cfg(feature = "tree_sitter_query")]
             "tree_sitter_query" => tree_sitter_query::language(),
 
+            #[cfg(feature = "catala_en")]
+            "catala_en" => tree_sitter_catala_en::language(),
+
+            #[cfg(feature = "catala_fr")]
+            "catala_fr" => tree_sitter_catala_fr::language(),
+
+            #[cfg(feature = "catala_pl")]
+            "catala_pl" => tree_sitter_catala_pl::language(),
+
             name => return Err(TopiaryConfigError::UnknownLanguage(name.to_string())),
         }
         .into())
@@ -144,6 +162,15 @@ impl Language {
 
             #[cfg(feature = "ocaml")]
             "ocaml" => "ocaml",
+
+            #[cfg(feature = "catala-en")]
+            "catala-en" => "catala_en",
+
+            #[cfg(feature = "catala_fr")]
+            "catala_fr" => "catala_fr",
+
+            #[cfg(feature = "catala_pl")]
+            "catala_pl" => "catala_pl",
 
             #[cfg(feature = "ocaml_interface")]
             "ocaml_interface" => "ocaml_interface",

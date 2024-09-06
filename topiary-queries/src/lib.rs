@@ -52,6 +52,24 @@ pub fn toml() -> &'static str {
     include_str!("../queries/toml.scm")
 }
 
+/// Returns the Topiary-compatible query file for Catala (en).
+#[cfg(feature = "catala_en")]
+pub fn catala_en() -> &'static str {
+    include_str!("../queries/catala.scm")
+}
+
+/// Returns the Topiary-compatible query file for Catala (fr).
+#[cfg(feature = "catala_fr")]
+pub fn catala_fr() -> &'static str {
+    include_str!("../queries/catala.scm")
+}
+
+/// Returns the Topiary-compatible query file for Catala (fr).
+#[cfg(feature = "catala_pl")]
+pub fn catala_pl() -> &'static str {
+    include_str!("../queries/catala.scm")
+}
+
 /// Returns the Topiary-compatible query file for the
 /// Tree-sitter query language.
 #[cfg(feature = "tree_sitter_query")]
