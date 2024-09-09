@@ -73,9 +73,9 @@ toml = "0.8"
 tree-sitter = "=0.20.10"
 tree-sitter-bash = { git = "https://github.com/tree-sitter/tree-sitter-bash", rev = "1b0321ee85701d5036c334a6f04761cdc672e64c" }
 tree-sitter-css = { git = "https://github.com/tree-sitter/tree-sitter-css.git", rev = "02b4ee757654b7d54fe35352fd8e53a8a4385d42" }
-tree-sitter-catala-fr = { path = "../tree-sitter-catala/fr" }
-tree-sitter-catala-en = { path = "../tree-sitter-catala/en" }
-tree-sitter-catala-pl = { path = "../tree-sitter-catala/pl" }
+tree-sitter-catala-fr = { path = "tree-sitter-catala/fr" }
+tree-sitter-catala-en = { path = "tree-sitter-catala/en" }
+tree-sitter-catala-pl = { path = "tree-sitter-catala/pl" }
 tree-sitter-json = { git = "https://github.com/tree-sitter/tree-sitter-json.git", rev = "3b129203f4b72d532f58e72c5310c0a7db3b8e6d" }
 tree-sitter-nickel = { git = "https://github.com/nickel-lang/tree-sitter-nickel", rev = "43433d8477b24cd13acaac20a66deda49b7e2547" }
 tree-sitter-ocaml = { git = "https://github.com/tree-sitter/tree-sitter-ocaml.git", rev = "9965d208337d88bbf1a38ad0b0fe49e5f5ec9677" }
